@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bangalore's Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url(img/bg.jpg);
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        body:hover{
+            background: url(img/newbg.jpg);
+        }
+
+        .left {
+            /* border: 3px solid red; */
+
+            position: absolute;
+            left: 60px;
+            top: 20px;
+
+        }
+        .left:hover{
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .right {
+            /* border: 4px solid rgb(127, 0, 245); */
+            position: absolute;
+            right: 60px;
+            top: 20px;
+        }
+
+        .mid {
+            /* border: 4px solid rgb(0, 65, 96); */
+            width: 42%;
+            display: block;
+            margin: 20px auto;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            margin: 34px 25px;
+        }
+
+        .navbar li a.active,
+        .navbar li a:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 110px;
+            height: 80px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-size: 12px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            padding: 3px 25px;
+            background-color: rgb(6, 6, 6);
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .btn:hover {
+            background-color: rgb(69, 68, 68);
+        }
+
+        .container {
+            border: 2px solid #f3f2f2;
+            width: 35%;
+            margin: 90px;
+            padding: 30px;
+            border-radius: 25px;
+        }
+        
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+              font-size: 20px;
+            text-align: center;
+            margin: 7px auto;
+            padding: 6px;
+            display: block;
+            width: 70%;
+            border-radius: 4px;
+            
+        }
+        .container button{
+            display: block;
+            margin: auto;
+            width: 25%;
+        }
+        .container h1 {
+            text-align: center;
+        }
+        #rainbow:hover{
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="left">
+        <img src="img/logo.jfif" alt="">
+        <div>Bangalore fittness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="check.html" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Call us</button><button class="btn">Email Us</button>
+    </div>
+    <div class="container">
+        <h1>Join the best Gym of Bangalore</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your  Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Phone no">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" id="" placeholder="Enter your E-mail id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Locality">
+            </div>
+
+            <button class="btn" id="rainbow">SUBMIT</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
